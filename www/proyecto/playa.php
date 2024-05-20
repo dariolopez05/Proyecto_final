@@ -3,12 +3,15 @@
 require_once "autoloader.php";
 
 $data = new Mostrar;
+$nombre = $_POST['nombre'];
 
 $result = $data->getAllPlayas();
 $output = $data->showCards($result);
 $security = new Security();
 $email = $security->getUserData();
 $info = $security->getUser($email);
+
+
 ?>
 
 <!DOCTYPE html>
@@ -109,6 +112,7 @@ $info = $security->getUser($email);
           </div>
         </div>
       </nav>
+
 
     
 </body>

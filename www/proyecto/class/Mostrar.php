@@ -68,7 +68,7 @@ class Mostrar extends Connection{
                 <p class='card-text' style='font-size: 20px;'> $valoracion</p>
                 </div>";
             $output .= "<div class='card-footer'>
-                        <a href='https://alcacer.tonipizzeria.com/' class='btn btn-primary'>Mas info</a>
+                        <a href='playa.php?name=$nombre' class='btn btn-primary'>Mas info</a>
                         </div></div></div>";
                         
         }
